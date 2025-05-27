@@ -8,7 +8,10 @@
     "start": "next start",
     "lint": "next lint",
     "test": "jest",
-    "test:watch": "jest --watch"
+    "test:watch": "jest --watch",
+    "format": "npm run add-testids --staged",
+    "postinstall": "husky install",
+    "add-testids": "tsx scripts/add-testids.ts"
   },
   "dependencies": {
     "@hookform/resolvers": "^5.0.1",
@@ -17,6 +20,7 @@
     "axios": "^1.9.0",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
+    "husky": "^9.1.7",
     "lucide-react": "^0.511.0",
     "next": "15.3.2",
     "react": "^19.0.0",
