@@ -10,6 +10,7 @@
     "test": "jest",
     "test:watch": "jest --watch",
     "format": "npm run add-testids",
+    "prepare": "husky install",
     "postinstall": "husky install",
     "add-testids": "tsx scripts/add-testids.ts"
   },
