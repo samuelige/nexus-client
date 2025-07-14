@@ -89,7 +89,7 @@ const AuthForm = () => {
                       value={restField.value ?? ''}
                       onChange={(e) => {
                         onChange(e.target.value);
-                      }}
+                      }} data-testid="authform-input"
                     />
                   )}
                 />
@@ -106,7 +106,7 @@ const AuthForm = () => {
                       value={restField.value ?? ''}
                       onChange={(e) => {
                         onChange(e.target.value);
-                      }}
+                      }} data-testid="authform-input-2"
                     />
                   )}
                 />
@@ -122,7 +122,7 @@ const AuthForm = () => {
                       value={restField.value ?? ''}
                       onChange={(e) => {
                         onChange(e.target.value);
-                      }}
+                      }} data-testid="authform-input-3"
                     />
                   )}
                 />
@@ -141,7 +141,7 @@ const AuthForm = () => {
                   value={restField.value ?? ''}
                   onChange={(e) => {
                     onChange(e.target.value);
-                  }}
+                  }} data-testid="authform-input-4"
                 />
               )}
             />
@@ -158,7 +158,7 @@ const AuthForm = () => {
                   value={restField.value ?? ''}
                   onChange={(e) => {
                     onChange(e.target.value);
-                  }}
+                  }} data-testid="authform-input-5"
                 />
               )}
             />
@@ -168,7 +168,7 @@ const AuthForm = () => {
             <Button 
               type="submit" 
               className="w-full mt-4 bg-gradient-to-r from-web3-accent to-web3-accent2 hover:opacity-90 text-white"
-              disabled={isSubmitting}
+              disabled={isSubmitting} data-testid="authform-button"
             >
               {isSubmitting ? (
                 <div className="flex items-center">
@@ -182,7 +182,7 @@ const AuthForm = () => {
               <Button
                 type="button"
                 className="underline mt-4 text-web3-accent hover:text-web3-accent2 transition-colors"
-                onClick={() => setMode(mode === "signin" ? "signup" : "signin")}
+                onClick={() => setMode(mode === "signin" ? "signup" : "signin")} data-testid="authform-button-2"
               >
                 {mode === "signin" ? "Sign Up" : "Sign In"}
               </Button>
